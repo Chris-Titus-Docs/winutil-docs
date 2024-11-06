@@ -5,7 +5,7 @@ theme = 'relearn'
 enableGitInfo = true
 
 [params]
-  themeVariant = ['relearn-dark','relearn-light' ]
+  themeVariant = ['zen-dark','zen-light' ]
   linkTitle = 'Relearn'
   collapsibleMenu = true
   disableLandingPageButton = true
