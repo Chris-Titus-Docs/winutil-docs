@@ -26,7 +26,7 @@ To install the apps you want to install, Click on the box to select the app you 
 
 After Selecting the apps you want to install. Click on the " Install/Upgrade Selected" button as shown on the image below. 
 > [!NOTE]
-> Depending on your internet Speed and the quality of your prefered apps it may take some time to download and install it onto your system.
+> Depending on your internet Speed and the quantity of your prefered apps it may take some time to download and install it onto your system.
 
 ![](/images/install/installation.png)
 
