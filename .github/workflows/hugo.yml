@@ -47,12 +47,15 @@ jobs:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
         run: hugo --minify --baseURL "${{ github.event.repository.html_url }}/"
+      - name: Move Public Folder to Root for Deployment
+        run: |
+          mkdir docs-deployment && mv public/* docs-deployment/
       - name: Commit and Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -b docs-deployment
-          git add public
+          git add docs-deployment -f
           git commit -m "Deploy docs to GitHub Pages"
           git push -u origin docs-deployment
       - name: Create Pull Request
