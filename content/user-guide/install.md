@@ -14,7 +14,7 @@ The Install Tab is a GUI Panel that allows users to install, remove, and update 
 
 ## Install Tab
 
-![](/images/Install/install-apps.png)
+![](/images/Install/Install-apps.png)
 
 ## Selecting of the Apps
 
@@ -28,7 +28,7 @@ After Selecting the apps you want to install. Click on the " Install/Upgrade Sel
 > [!NOTE]
 > Depending on your internet Speed and the quantity of your prefered apps it may take some time to download and install it onto your system.
 
-![](/images/Install/installation.png)
+![](/images/Install/Installation.png)
 
 ## Tracking Installation process
 
