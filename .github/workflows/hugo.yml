@@ -63,5 +63,5 @@ jobs:
         with:
           title: "Deploy Docs to GitHub Pages"
           body: "This PR updates the documentation on the GitHub Pages site."
-          head: "docs-deployment"
+          branch: "docs-deployment"
           base: "main"
