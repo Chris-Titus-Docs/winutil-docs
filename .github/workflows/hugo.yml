@@ -57,6 +57,7 @@ jobs:
           git checkout -b docs-deployment
           git add docs-deployment -f
           git commit -m "Deploy docs to GitHub Pages"
+          git pull
           git push -u origin docs-deployment
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
