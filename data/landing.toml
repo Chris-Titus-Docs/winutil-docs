@@ -1,0 +1,44 @@
+[hero]
+enable = true
+weight = 10
+template = "hero"
+title = "Winutil Docs"
+subtitle = "Chris Titus Tech's Windows Utility - Install Programs, Tweaks, Fixes, and Updates"
+info = "**Open Source** MIT Licensed."
+
+  [hero.backgroundImage]
+  path = "images/templates/hero"
+
+    [hero.backgroundImage.filename]
+    desktop = "gradient-desktop.webp"
+    mobile = "gradient-mobile.webp"
+
+  [hero.badge]
+  text = "v24.10.07"
+  color = "primary"
+  pill = false
+  soft = true
+
+  [titleLogo]
+  path = "images/logos"
+  filename = "navlogo.png"
+  alt = "Lotus Docs Logo"
+  height = "80px"
+
+  [hero.image]
+  path = "images"
+  filename = "lotus_docs_screenshot.png"
+  alt = "Screenshot"
+  boxShadow = true
+  rounded = true
+
+  [hero.ctaButton]
+  icon = "rocket_launch"
+  btnText = "visit Repo"
+  url = "https://github.com/christitustech/winutil"
+
+  [hero.cta2Button]
+  icon = "construction"
+  btnText = "Documentation"
+  url = "/docs"
+
