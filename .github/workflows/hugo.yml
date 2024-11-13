@@ -50,7 +50,6 @@ jobs:
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: On the fly path replacement for images
         run: |
-          grep -rl '<img src="/images/favicon.png">' ./layouts/partials | xargs sed -i s@"/images/"@"/winutil-docs/images/"@g
           grep -rl "/images/" ./content | xargs sed -i s@"/images/"@"/winutil-docs/images/"@g
       - name: Build with Hugo
         env:
