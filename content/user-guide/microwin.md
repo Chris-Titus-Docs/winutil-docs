@@ -65,6 +65,10 @@ If you want to use MicroWin on a real system, you may want to include the driver
 
 - **Injecting drivers:** if you want to install MicroWin on another system, simply check this option. Prepare a folder with the drivers of your system and specify it in the UI. To learn more about how to export the drivers, read the section "Exporting drivers"
 - **Importing drivers:** if you want to install MicroWin on **your** system, you can apply the drivers of your system to the image by importing them. Combine that with the former option, and you can have your driver files stored permanently on your preferred location
+- **Injecting VirtIO drivers:** if you plan on using the target Windows image with QEMU/Proxmox VE, or any UI that uses it (like `virt-manager` on Linux), you can automatically download the VirtIO driver ISO and put its contents into your ISO file
+
+> [!INFO]
+Injecting VirtIO drivers is only supported on v25.01.11 and later
 
 Of course, you can continue without setting up drivers. Simply leave the options blank and continue with the process.
 
@@ -125,6 +129,16 @@ To export the drivers using [DISMTools](https://github.com/CodingWonders/DISMToo
 ##### Other UIs
 
 To export the drivers using another UI, read its documentation.
+
+#### Using VirtIO drivers
+
+After the drivers from the Ventoy ISO are copied, do the following if you can't see any drives on your QEMU VM:
+
+1. In the disk selection screen, select "Load driver"
+2. Click "Browse" and select `D:\VirtIO\vioscsi\w11\amd64` (replace `amd64` with `ARM64` if you want to use Windows on ARM)
+3. Select all drivers in the list and click OK
+
+You should be able to see your disks now.
 
 ### Copying to Ventoy
 
