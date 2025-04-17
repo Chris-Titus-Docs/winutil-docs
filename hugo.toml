@@ -67,3 +67,8 @@ dateFormat = "January 2, 2006"
 [params.highlight.copy]
 enable = true
 display = "hover"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+	  unsafe = true
