@@ -68,6 +68,25 @@ dateFormat = "January 2, 2006"
 enable = true
 display = "hover"
 
+[menu]
+
+  [[menu.sidebar]]
+  name = "Links"
+  weight = 1
+    [menu.sidebar.params]
+    type = "separator"
+
+  [[menu.sidebar]]
+  name = "Github Repo ↗"
+  pageRef = "https://github.com/ChrisTitusTech/winutil"
+  weight = 2
+
+  [[menu.sidebar]]
+  name = "Discord Server ↗"
+  url = "https://discord.gg/RUbZUZyByQ"
+  weight = 3
+
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
