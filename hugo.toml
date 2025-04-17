@@ -50,12 +50,12 @@ dateFormat = "January 2, 2006"
   displayTitle = false
   displayLogo = true
 
-    [params.navbar.logo]
-    path = "navlogo.png"
-    dark = "navlogo.png"
-    link = "/"
-    width = 150
-    height = 50
+  [params.navbar.logo]
+  path = "navlogo.png"
+  dark = "navlogo.png"
+  link = "/"
+  width = 150
+  height = 50
 
   [params.theme]
   default = "system"
@@ -63,6 +63,12 @@ dateFormat = "January 2, 2006"
 
   [params.page]
   width = "wide"
+  
+  [params.footer]
+  enable = true
+  displayCopyright = true
+  displayPoweredBy = true
+  width = "normal"
 
 [params.highlight.copy]
 enable = true
