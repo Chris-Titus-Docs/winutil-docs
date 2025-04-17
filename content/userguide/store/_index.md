@@ -33,8 +33,8 @@ weight: 2
   {{< /tab >}}
 {{< /tabs >}}
 
-![Install Image](assets/Install-Tab-Dark.png#only-dark#gh-dark-mode-only)
-![Install Image](assets/Install-Tab-Light.png#only-light#gh-light-mode-only)
+![Install Image](/images/Install-Tab-Dark.png#only-dark#gh-dark-mode-only)
+![Install Image](/images/Install-Tab-Light.png#only-light#gh-light-mode-only)
 
 
 > [!TIP]
