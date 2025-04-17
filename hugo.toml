@@ -78,7 +78,7 @@ display = "hover"
 
   [[menu.sidebar]]
   name = "Github Repo ↗"
-  pageRef = "https://github.com/ChrisTitusTech/winutil"
+  url = "https://github.com/ChrisTitusTech/winutil"
   weight = 2
 
   [[menu.sidebar]]
