@@ -1,6 +1,7 @@
 ---
 title: Welcome to Winutil Documentation!
 toc: false
+width: full
 ---
 
 [![Version](https://img.shields.io/github/v/release/ChrisTitusTech/Winutil?color=%230567ff&label=Latest%20Release&style=for-the-badge)](https://github.com/ChrisTitusTech/Winutil/releases/latest)

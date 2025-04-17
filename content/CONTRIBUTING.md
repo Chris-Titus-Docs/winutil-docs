@@ -5,7 +5,7 @@
 * Test the latest changes to Winutil by running the pre-release and reporting issues you are encountering to help us continually improve Winutil!
 
 #### **Run the latest pre-release**
-   ```ps1
+   ```
    irm https://christitus.com/windev | iex
    ```
 
@@ -64,9 +64,9 @@ graph TD
 ### Fork the Repo
 * Fork the Winutil Repository [here](https://github.com/ChrisTitusTech/Winutil) to create a copy that will be available in your repository list.
 
-![Fork Image](/images/Fork-Button-Dark.png#only-dark#gh-dark-mode-only)
+{{< image src="images/Fork-Button-Dark.png#only-dark#gh-dark-mode-only" alt="Fork Image" >}}
 
-![Fork Image](/images/Fork-Button-Light.png#only-light#gh-light-mode-only)
+{{< image src="images/Fork-Button-Light.png#only-light#gh-light-mode-only" alt="Fork Image" >}}
 
 ### Clone the Fork
 
@@ -90,22 +90,22 @@ graph TD
 * Run the following command to compile and run Winutil:
 * `.\Compile.ps1 -run`
 
-![Compile](/images/Compile.png)
+{{< image src="images/Compile.png" alt="Compile" >}}
 
 * After seeing that your changes work properly, feel free to commit the changes to the repository and make a PR. For help on that, follow the documentation below.
 
 ### Committing the changes
 * Before committing your changes, please discard changes made to the `Winutil.ps1` file, like the following:
 
-![Push Commit Image](/images/Discard-GHD.png)
+{{< image src="images/Discard-GHD.png" alt="Push Commit Image" >}}
 
 * Now, commit your changes once you are happy with the result.
 
-![Commit Image](/images/Commit-GHD.png)
+{{< image src="images/Commit-GHD.png" alt="Commit Image" >}}
 
 * Push the changes to upload them to your fork on github.com.
 
-![Push Commit Image](/images/Push-Commit.png)
+{{< image src="images/Push-Commit.png" alt="Push Commit Image" >}}
 
 ### Making a PR
 * To make a PR on your repo under a new branch linking to the main branch, a button will show and say Preview and Create pull request. Click that button and fill in all the information that is provided on the template. Once all the information is filled in correctly, check your PR to make sure there is not a Winutil.ps1 file attached to the PR. Once everything is good, make the PR and wait for Chris (the maintainer) to accept or deny your PR. Once it is accepted by Chris, you will be able to see your changes in the "/windev" build.

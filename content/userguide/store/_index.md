@@ -33,11 +33,8 @@ weight: 2
   {{< /tab >}}
 {{< /tabs >}}
 
-<picture>
-	<source srcset="/images/Install-Tab-Dark.png" media="(prefers-color-scheme: dark)">
-	<source srcset="/images/Install-Tab-Light.png" media="(prefers-color-scheme: light)">
-	<img src="/images/Install-Tab-Light.png" />
-</picture>
+{{< image src="images/Install-Tab-Dark.png" alt="Install Image" >}}
+{{< image src="images/Install-Tab-Light.png" alt="Install Image" >}}
 
 
 > [!TIP]

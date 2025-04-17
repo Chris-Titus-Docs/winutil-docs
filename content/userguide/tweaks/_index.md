@@ -3,11 +3,10 @@ title: Tweaks
 weight: 3
 ---
 
-<picture>
-	<source srcset="/images/Tweaks-Tab-Dark.png" media="(prefers-color-scheme: dark)">
-	<source srcset="/images/Tweaks-Tab-Light.png" media="(prefers-color-scheme: light)">
-	<img src="/images/Tweaks-Tab-Light.png" />
-</picture>
+{{< image src="images/Tweaks-Tab-Dark.png" alt="Image of Tweaks Tab in Dark Theme" >}}
+
+<!--![Tweaks Image](/images/Tweaks-Tab-Dark.png#only-dark#gh-dark-mode-only)-->
+<!-- ![Tweaks Image](/images/Tweaks-Tab-Light.png#only-light#gh-light-mode-only) -->
 
 ### Run Tweaks
 * **Open Tweaks Tab**: Navigate to the 'Tweaks' tab in the application.
