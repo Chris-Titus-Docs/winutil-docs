@@ -13,14 +13,22 @@ If you're excited to try this out, let's go through how to use it. You'll be don
 
 To start with MicroWin, go to its tab. You will see the following:
 
-![](/images/microwin/microwin-screen-dark.png)
+<picture>
+	<source srcset="/images/microwin/microwin-screen-dark.png" media="(prefers-color-scheme: dark)">
+	<source srcset="/images/microwin/microwin-screen-light.png" media="(prefers-color-scheme: light)">
+	<img src="/images/microwin/microwin-screen-dark.png" />
+</picture>
 
 From this screen, you'll have to do one of the following:
 
 - **Select the ISO file:** if you have already downloaded a Windows ISO file, select it and click OK
 - **Get an ISO file automatically:** if you don't have an ISO file ready, and don't want to waste time going to the download page, you can grab the latest versions of Windows easily. Select your preferred version and the language of the ISO file, and its destination, and you will have an ISO file in no time.
 
-![](/images/microwin/microwin-downloader-dark.png)
+<picture>
+	<source srcset="/images/microwin/microwin-downloader-dark.png" media="(prefers-color-scheme: dark)">
+	<source srcset="/images/microwin/microwin-downloader-light.png" media="(prefers-color-scheme: light)">
+	<img src="/images/microwin/microwin-downloader-light.png" />
+</picture>
 
 > [!INFO]
 When downloading your ISO file, network conditions (such as speed and location) can affect the time you have to wait for the download to complete and the availability of such download.
@@ -39,7 +47,11 @@ You may be wondering if your Windows image is compatible with the MicroWin proce
 
 After getting information about your ISO file, you will see the following screen:
 
-![](/images/microwin/microwin-screen-full-dark.png)
+<picture>
+	<source srcset="/images/microwin/microwin-screen-full-dark.png" media="(prefers-color-scheme: dark)">
+	<source srcset="/images/microwin/microwin-screen-full-light.png" media="(prefers-color-scheme: light)">
+	<img src="/images/microwin/microwin-screen-full-light.png" />
+</picture>
 
 ### Requirements
 
@@ -56,7 +68,11 @@ By default, MicroWin will target the Pro edition of Windows. The Pro edition is 
 
 Obviously, you should pick the edition of Windows for which you have a license. To change the edition to process, select the drop-down menu under "Choose Windows SKU" and select your edition.
 
-![](/images/microwin/microwin-skuselect-dark.png)
+<picture>
+	<source srcset="/images/microwin/microwin-skuselect-dark.png" media="(prefers-color-scheme: dark)">
+	<source srcset="/images/microwin/microwin-skuselect-light.png" media="(prefers-color-scheme: light)">
+	<img src="/images/microwin/microwin-skuselect-light.png" />
+</picture>
 
 ### Injecting drivers
 
@@ -149,7 +165,11 @@ You can learn more about Ventoy drives [here](https://www.ventoy.net/en/index.ht
 
 If you want to set up a custom user, effectively creating a completely unattended installation, you can set up a user name and password:
 
-![](/images/microwin/microwin-customuser-dark.png)
+<picture>
+	<source srcset="/images/microwin/microwin-customuser-dark.png" media="(prefers-color-scheme: dark)">
+	<source srcset="/images/microwin/microwin-customuser-light.png" media="(prefers-color-scheme: light)">
+	<img src="/images/microwin/microwin-customuser-light.png" />
+</picture>
 
 > [!INFO]
 To set up a custom user, you need to specify its name, which cannot surpass 20 characters. Otherwise, a user named "User" will be created. However, you don't need to set up a password. If you leave the password box blank, you can take advantage of auto-logons, but **do what you think it's best for your use case**.
