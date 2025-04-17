@@ -5,7 +5,7 @@
 * Test the latest changes to Winutil by running the pre-release and reporting issues you are encountering to help us continually improve Winutil!
 
 #### **Run the latest pre-release**
-   ```ps1
+   ```
    irm https://christitus.com/windev | iex
    ```
 
