@@ -5,7 +5,7 @@ width: full
 ---
 
 <div style="display: flex; justify-content: center; align-items: center; width: 80%; margin-left:10%" >
-  <a  href="https://github.com/ChrisTitusTech/Winutil/releases/latest"><img src="https://img.shields.io/github/v/release/ChrisTitusTech/Winutil?color=%230567ff&label=Latest%20Release&style=for-the-badge" alt="Version"></a>
+  <a href="https://github.com/ChrisTitusTech/Winutil/releases/latest"><img src="https://img.shields.io/github/v/release/ChrisTitusTech/Winutil?color=%230567ff&label=Latest%20Release&style=for-the-badge" alt="Version"></a>
   <img src="https://img.shields.io/github/downloads/ChrisTitusTech/Winutil/Winutil.ps1?label=Total%20Downloads&style=for-the-badge" alt="GitHub Downloads">
   <a href="https://discord.gg/RUbZUZyByQ"><img src="https://dcbadge.limes.pink/api/server/https://discord.gg/RUbZUZyByQ" alt="Discord Community Server"></a>
 </div>
