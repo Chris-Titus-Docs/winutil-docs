@@ -33,9 +33,7 @@ weight: 2
   {{< /tab >}}
 {{< /tabs >}}
 
-{{< image src="images/Install-Tab-Dark.png" alt="Install Image" >}}
-{{< image src="images/Install-Tab-Light.png" alt="Install Image" >}}
-
+{{< image src="images/Install-Tab" alt="Install Image" >}}
 
 > [!TIP]
 > If you have trouble finding an application, press `ctrl + f` and search the name of it. Applications will filter depending on your input.

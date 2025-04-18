@@ -1,11 +1,30 @@
-<img
-{{ with resources.GetMatch (.Get "src") }}
-    src="{{ .RelPermalink }}"
-    Width="{{ .Width }}"
-    height="{{ .Height }}"
-{{ end }}
-{{ with .Get "alt" }}
-    alt="{{.}}"
-{{ else }}
-    alt=""
-{{ end }}>
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+
+{{ $DarkSrc := "" }}
+{{ $LightSrc := "" }}
+
+{{ $DarkSrcPng := (print $src "-Dark" ".png") }}
+{{ $LightSrcPng := (print $src "-Light" ".png") }}
+{{ $DarkSrcJpg := (print $src "-Dark" ".jpg") }}
+{{ $LightSrcJpg := (print $src "-Light" ".jpg") }}
+
+{{ with resources.GetMatch ($DarkSrcJpg) }} {{ $DarkSrc = ($DarkSrcJpg) }} {{ end }}
+{{ with resources.GetMatch ($LightSrcJpg) }} {{ $LightSrc = ($LightSrcJpg) }} {{ end }}
+{{ with resources.GetMatch ($DarkSrcPng) }} {{ $DarkSrc = ($DarkSrcPng) }} {{ end }}
+{{ with resources.GetMatch ($LightSrcPng) }} {{ $LightSrc = ($LightSrcPng) }} {{ end }}
+
+
+<picture>
+    {{ with resources.GetMatch ($DarkSrc) }}<source srcset="{{ .RelPermalink }}" media="(prefers-color-scheme: dark)"> {{ end }}
+    {{ with resources.GetMatch ($LightSrc) }}<source srcset="{{ .RelPermalink }}" media="(prefers-color-scheme: light)"> {{ end }}
+    <img {{ with resources.GetMatch ($LightSrc) }}
+        src="{{ .RelPermalink }}"
+        Width="{{ .Width }}"
+        height="{{ .Height }}"
+    {{ else with resources.GetMatch ($DarkSrc) }}
+        src="{{ .RelPermalink }}"
+        Width="{{ .Width }}"
+        height="{{ .Height }}"
+    {{ end }}{{ with .Get "alt" }} alt="{{.}}"{{ else }} alt=""{{ end }}/>
+</picture>
