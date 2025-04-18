@@ -3,7 +3,7 @@ title: Store
 weight: 2
 ---
 
-{{< tabs items="Installation & Updates,Upgrade All,Uninstall,Get Installed,Clear Selection" defaultIndex="1" >}}
+{{< tabs items="Installation & Updates,Upgrade All,Uninstall,Get Installed,Clear Selection" defaultIndex="0" >}}
 
   {{< tab >}}
     * Choose the programs you want to install or upgrade.
