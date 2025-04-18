@@ -16,8 +16,8 @@
 
 
 <picture>
-    {{ with resources.GetMatch ($DarkSrc) }}<source srcset="{{ .RelPermalink }}" media="(prefers-color-scheme: dark)"> {{ end }}
-    {{ with resources.GetMatch ($LightSrc) }}<source srcset="{{ .RelPermalink }}" media="(prefers-color-scheme: light)"> {{ end }}
+    {{ with resources.GetMatch ($DarkSrc) }}<source srcset="{{ .RelPermalink }}" media="(prefers-color-scheme: dark)">{{ end }}
+    {{ with resources.GetMatch ($LightSrc) }}<source srcset="{{ .RelPermalink }}" media="(prefers-color-scheme: light)">{{ end }}
     <img {{ with resources.GetMatch ($LightSrc) }}
         src="{{ .RelPermalink }}"
         Width="{{ .Width }}"
@@ -26,5 +26,5 @@
         src="{{ .RelPermalink }}"
         Width="{{ .Width }}"
         height="{{ .Height }}"
-    {{ end }}{{ with .Get "alt" }} alt="{{.}}"{{ else }} alt=""{{ end }}/>
+    {{ end }}{{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}/>
 </picture>
