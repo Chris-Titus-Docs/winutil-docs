@@ -6,12 +6,10 @@ weight: 7
 * Some features are available through automation. This allows you to save your config file, pass it to Winutil, walk away and come back to a finished system. Here is how you can set it up currently with Winutil >24.01.15
 
 * On the Install Tab, click "Get Installed", this will get all installed apps **supported by Winutil** on the system.
-{{< image src="images/Get-Installed-Dark.png" alt="GetInstalled" >}}
-{{< image src="images/Get-Installed-Light.png" alt="GetInstalled" >}}
+{{< image src="images/Get-Installed" alt="GetInstalled" >}}
 
 * Click on the Settings cog in the upper right corner and choose Export. Choose file file and location; this will export the setting file.
-{{< image src="images/Settings-Export-Dark.png" alt="SettingsExport" >}}
-{{< image src="images/Settings-Export-Light.png" alt="SettingsExport" >}}
+{{< image src="images/Settings-Export" alt="SettingsExport" >}}
 
 * Copy this file to a USB or somewhere you can use it after Windows installation.
 

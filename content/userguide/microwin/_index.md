@@ -13,14 +13,14 @@ If you're excited to try this out, let's go through how to use it. You'll be don
 
 To start with MicroWin, go to its tab. You will see the following:
 
-{{< image src="images/microwin/microwin-screen-dark.png" >}}
+{{< image src="images/microwin/microwin-screen" >}}
 
 From this screen, you'll have to do one of the following:
 
 - **Select the ISO file:** if you have already downloaded a Windows ISO file, select it and click OK
 - **Get an ISO file automatically:** if you don't have an ISO file ready, and don't want to waste time going to the download page, you can grab the latest versions of Windows easily. Select your preferred version and the language of the ISO file, and its destination, and you will have an ISO file in no time.
 
-{{< image src="images/microwin/microwin-downloader-dark.png" >}}
+{{< image src="images/microwin/microwin-downloader" >}}
 
 > [!NOTE]
 When downloading your ISO file, network conditions (such as speed and location) can affect the time you have to wait for the download to complete and the availability of such download.
@@ -39,7 +39,7 @@ You may be wondering if your Windows image is compatible with the MicroWin proce
 
 After getting information about your ISO file, you will see the following screen:
 
-{{< image src="images/microwin/microwin-screen-full-dark.png" >}}
+{{< image src="images/microwin/microwin-screen-full" >}}
 
 ### Requirements
 
@@ -56,7 +56,7 @@ By default, MicroWin will target the Pro edition of Windows. The Pro edition is 
 
 Obviously, you should pick the edition of Windows for which you have a license. To change the edition to process, select the drop-down menu under "Choose Windows SKU" and select your edition.
 
-{{< image src="images/microwin/microwin-skuselect-dark.png" >}}
+{{< image src="images/microwin/microwin-skuselect" >}}
 
 ### Injecting drivers
 
@@ -90,11 +90,11 @@ To export the drivers using [Driver Store Explorer (RAPR)](https://github.com/lo
 
 1. Go to "File > Export All Drivers"
 
-{{< image src="images/microwin/rapr_menu.png" >}}
+{{< image src="images/microwin/rapr_menu" >}}
 
 2. Choose the folder to export all the drivers to and click OK
 
-{{< image src="images/microwin/rapr_folderpicker.png" >}}
+{{< image src="images/microwin/rapr_folderpicker" >}}
 
 ##### DISM++
 
@@ -103,11 +103,11 @@ To export the drivers using [DISM++](https://github.com/Chuyu-Team/Dism-Multi-la
 1. Select your active installation if you haven't (it's the first item)
 2. Go to "Drivers", select "All" and select "Export"
 
-{{< image src="images/microwin/dism++_drivercontrol.png" >}}
+{{< image src="images/microwin/dism++_drivercontrol" >}}
 
 3. Choose the folder to export all the drivers to and click OK
 
-{{< image src="images/microwin/dism++_driverexport.png" >}}
+{{< image src="images/microwin/dism++_driverexport" >}}
 
 ##### DISMTools
 
@@ -115,15 +115,15 @@ To export the drivers using [DISMTools](https://github.com/CodingWonders/DISMToo
 
 1. Select "Manage online installation" in the home screen and accept the warning
 
-{{< image src="images/microwin/dt_activeinst.png" >}}
+{{< image src="images/microwin/dt_activeinst" >}}
 
 2. Go to "Commands > Drivers > Export driver packages..."
 
-{{< image src="images/microwin/dt_exportdrvs.png" >}}
+{{< image src="images/microwin/dt_exportdrvs" >}}
 
 3. Choose the path to export the drivers to ("Export target") and click OK
 
-{{< image src="images/microwin/dt_exporttarget.png" >}}
+{{< image src="images/microwin/dt_exporttarget" >}}
 
 ##### Other UIs
 
@@ -149,7 +149,7 @@ You can learn more about Ventoy drives [here](https://www.ventoy.net/en/index.ht
 
 If you want to set up a custom user, effectively creating a completely unattended installation, you can set up a user name and password:
 
-{{< image src="images/microwin/microwin-customuser-dark.png" >}}
+{{< image src="images/microwin/microwin-customuser" >}}
 
 > [!NOTE]
 To set up a custom user, you need to specify its name, which cannot surpass 20 characters. Otherwise, a user named "User" will be created. However, you don't need to set up a password. If you leave the password box blank, you can take advantage of auto-logons, but **do what you think it's best for your use case**.
