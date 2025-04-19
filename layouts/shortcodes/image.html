@@ -8,12 +8,29 @@
 {{ $SingleImage := "" }}
 
 {{/*Find images and update the previous Single,Dark,Light Images variables*/}}
+{{ with resources.GetMatch (print $src ".jpg") }} {{ $SingleImage = . }} {{ end }}
 {{ with resources.GetMatch (print $src "-Dark" ".jpg") }} {{ $DarkImage = . }} {{ end }}
 {{ with resources.GetMatch (print $src "-Light" ".jpg") }} {{ $LightImage = . }} {{ end }}
-{{ with resources.GetMatch (print $src ".jpg") }} {{ $SingleImage = . }} {{ end }}
+{{ with resources.GetMatch (print $src ".png") }} {{ $SingleImage = . }} {{ end }}
 {{ with resources.GetMatch (print $src "-Dark" ".png") }} {{ $DarkImage = . }} {{ end }}
 {{ with resources.GetMatch (print $src "-Light" ".png") }} {{ $LightImage = . }} {{ end }}
-{{ with resources.GetMatch (print $src ".png") }} {{ $SingleImage = . }} {{ end }}
+
+{{/*Applying Image Processing*/}}
+{{ with $SingleImage }}
+    {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
+        {{ $SingleImage = . }}
+    {{ end }}
+{{ end }}
+{{ with $DarkImage }}
+    {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
+        {{ $DarkImage = . }}
+    {{ end }}
+{{ end }}
+{{ with $LightImage }}
+    {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
+        {{ $LightImage = . }}
+    {{ end }}
+{{ end }}
 
 
 {{ if $SingleImage }}
