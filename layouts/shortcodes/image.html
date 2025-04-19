@@ -34,28 +34,16 @@
 
 
 {{ if $SingleImage }}
-    <img {{ with $SingleImage }}
-        src="{{ .RelPermalink }}"
-        width="{{ .Width }}"
-        height="{{ .Height }}"
-        {{end}}{{ with $alt }}alt="{{.}}"{{ else }}alt=""{{ end }}/>
+    <img src="{{ $SingleImage.RelPermalink }}" Width="{{ $SingleImage.Width }}" height="{{ $SingleImage.Height }}" {{ with $alt }}alt="{{.}}"{{ else }}alt=""{{ end }}/>
 {{ else }}
 <picture>
     {{ with $SingleImage }}<source srcset="{{ .RelPermalink }}">{{ end }}
     {{ with $DarkImage }}<source srcset="{{ .RelPermalink }}" media="(prefers-color-scheme: dark)">{{ end }}
     {{ with $LightImage }}<source srcset="{{ .RelPermalink }}" media="(prefers-color-scheme: light)">{{ end }}
-    <img {{ with $SingleImage }}
-        src="{{ .RelPermalink }}"
-        Width="{{ .Width }}"
-        height="{{ .Height }}"
-        {{ else with $LightImage }}
-        src="{{ .RelPermalink }}"
-        Width="{{ .Width }}"
-        height="{{ .Height }}"
-        {{ else with $DarkImage }}
-        src="{{ .RelPermalink }}"
-        Width="{{ .Width }}"
-        height="{{ .Height }}"
-        {{ end }}{{ with $alt }}alt="{{.}}"{{ else }}alt=""{{ end }}/>
+
+    {{ with $SingleImage }}<img src="{{ .RelPermalink }}" Width="{{ .Width }}" height="{{ .Height }}" {{ with $alt }}alt="{{.}}"{{ else }}alt=""{{ end }}/>
+    {{ else with $LightImage }}<img src="{{ .RelPermalink }}" Width="{{ .Width }}" height="{{ .Height }}" {{ with $alt }}alt="{{.}}"{{ else }}alt=""{{ end }}/>
+    {{ else with $DarkImage }}<img src="{{ .RelPermalink }}" Width="{{ .Width }}" height="{{ .Height }}" {{ with $alt }}alt="{{.}}"{{ else }}alt=""{{ end }}/>
+    {{ end }}
 </picture>
 {{ end }}
