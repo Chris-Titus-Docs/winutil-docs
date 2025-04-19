@@ -6,9 +6,9 @@ weight: 3
 
 ### Fixes
 
-- [Remove Adobe Creative Cloud](RunAdobeCCCleanerTool/)
-- [Reset Network](Network/)
-- [Reset Windows Update](Update/)
-- [Set Up Autologin](Autologin/)
-- [System Corruption Scan](DISM/)
-- [WinGet Reinstall](Winget/)
+- [Remove Adobe Creative Cloud](runadobecccleanertool/)
+- [Reset Network](network/)
+- [Reset Windows Update](update/)
+- [Set Up Autologin](autologin/)
+- [System Corruption Scan](dism/)
+- [WinGet Reinstall](winget/)

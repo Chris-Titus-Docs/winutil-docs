@@ -8,5 +8,5 @@ weight: 4
 
 ### Performance-Plans
 
-- [Add and Activate Ultimate Performance Profile](AddUltPerf/)
-- [Remove Ultimate Performance Profile](RemoveUltPerf/)
+- [Add and Activate Ultimate Performance Profile](addultperf/)
+- [Remove Ultimate Performance Profile](removeultperf/)
