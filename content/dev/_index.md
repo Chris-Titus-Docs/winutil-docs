@@ -27,7 +27,7 @@
 ### Shortcuts
 
 - [Create Winutil Shortcut](tweaks/shortcuts/shortcut/)
-### z--Advanced-Tweaks---CAUTION
+### Advanced-Tweaks---CAUTION
 
 - [Adobe Debloat](tweaks/z--advanced-tweaks---caution/debloatadobe/)
 - [Adobe Network Block](tweaks/z--advanced-tweaks---caution/blockadobenet/)
