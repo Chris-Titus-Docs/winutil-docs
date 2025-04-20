@@ -1,3 +1,8 @@
+---
+title: Known Issues
+toc: true
+---
+
 ## Launch Issues
 
 ### Blocked by anti-virus
@@ -8,13 +13,13 @@ To resolve this, allow/whitelist the script in your anti-virus software settings
 ### Download not working
 If `https://christitus.com/win` is not working, or you want to download the code from GitHub directly, you can use the direct download link:
 
-```ps1
+```
 irm https://github.com/ChrisTitusTech/Winutil/releases/latest/download/Winutil.ps1 | iex
 ```
 
 If you are seeing errors referencing TLS or security, you may be running an older version of Windows where TLS 1.2 is not the default security protocol used for network connections. The following commands will force .NET to use TLS 1.2, and download the script directly using .NET instead of PowerShell:
 
-```ps1
+```
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 iex (New-Object Net.WebClient).DownloadString('https://github.com/ChrisTitusTech/Winutil/releases/latest/download/Winutil.ps1')
 ```
@@ -32,7 +37,8 @@ If you are still having issues, try using a **VPN**, or changing your **DNS prov
 ### Script blocked by Execution Policy
 1. Ensure you are running PowerShell as admin: Press `Windows Key`+`X` and select *PowerShell (Admin)* in Windows 10, or `Windows Terminal (Admin)` in Windows 11.
 2. In the PowerShell window, type this to allow unsigned code to execute and run the installation script:
-    ```ps1
+
+    ```
     Set-ExecutionPolicy Unrestricted -Scope Process -Force
     irm https://christitus.com/win | iex
     ```
@@ -108,7 +114,7 @@ Enable Background Apps. Related issues: [#69](https://github.com/ChrisTitusTech/
 ### Xbox Game Bar Activation Broken
 Set the Xbox Accessory Management Service to Automatic:
 
-```ps1
+```
 Get-Service -Name "XboxGipSvc" | Set-Service -StartupType Automatic
 ```
 

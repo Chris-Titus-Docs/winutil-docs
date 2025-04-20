@@ -31,6 +31,11 @@ pageRef = "faq.md"
 weight = 4
 
 [[menu.main]]
+name = "Known Issues"
+pageRef = "KnownIssues.md"
+weight = 4
+
+[[menu.main]]
 name = "Search"
 weight = 5
 
