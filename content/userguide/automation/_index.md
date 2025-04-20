@@ -17,7 +17,7 @@ weight: 7
 > Use the Microwin tab to create a custom Windows image & install the Windows image.
 
 * On any supported Windows machine, open PowerShell **as Admin** and run the following command to automatically apply tweaks and install apps from the config file.
-    ```ps1
+    ```
     iex "& { $(irm https://christitus.com/win) } -Config [path-to-your-config] -Run"
     ```
 * Have a cup of coffee! Come back when it's done.
