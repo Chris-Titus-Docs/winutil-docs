@@ -1,3 +1,7 @@
+---
+toc: true
+---
+
 # How to Contribute?
 
 ## Testing
