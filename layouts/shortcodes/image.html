@@ -1,0 +1,49 @@
+{{/*Retrive Passed Shortcode Parameters*/}}
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+
+{{/*Define variables as global variables to make them accessable in this shortcode*/}}
+{{ $DarkImage := "" }}
+{{ $LightImage := "" }}
+{{ $SingleImage := "" }}
+
+{{/*Find images and update the previous Single,Dark,Light Images variables*/}}
+{{ with resources.GetMatch (print $src ".jpg") }} {{ $SingleImage = . }} {{ end }}
+{{ with resources.GetMatch (print $src "-Dark" ".jpg") }} {{ $DarkImage = . }} {{ end }}
+{{ with resources.GetMatch (print $src "-Light" ".jpg") }} {{ $LightImage = . }} {{ end }}
+{{ with resources.GetMatch (print $src ".png") }} {{ $SingleImage = . }} {{ end }}
+{{ with resources.GetMatch (print $src "-Dark" ".png") }} {{ $DarkImage = . }} {{ end }}
+{{ with resources.GetMatch (print $src "-Light" ".png") }} {{ $LightImage = . }} {{ end }}
+
+{{/*Applying Image Processing*/}}
+{{ with $SingleImage }}
+    {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
+        {{ $SingleImage = . }}
+    {{ end }}
+{{ end }}
+{{ with $DarkImage }}
+    {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
+        {{ $DarkImage = . }}
+    {{ end }}
+{{ end }}
+{{ with $LightImage }}
+    {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
+        {{ $LightImage = . }}
+    {{ end }}
+{{ end }}
+
+
+{{ if $SingleImage }}
+    <img src="{{ $SingleImage.RelPermalink }}" Width="{{ $SingleImage.Width }}" height="{{ $SingleImage.Height }}" {{ with $alt }}alt="{{.}}"{{ else }}alt=""{{ end }}/>
+{{ else }}
+<picture>
+    {{ with $SingleImage }}<source srcset="{{ .RelPermalink }}">{{ end }}
+    {{ with $DarkImage }}<source srcset="{{ .RelPermalink }}" media="(prefers-color-scheme: dark)">{{ end }}
+    {{ with $LightImage }}<source srcset="{{ .RelPermalink }}" media="(prefers-color-scheme: light)">{{ end }}
+
+    {{ with $SingleImage }}<img src="{{ .RelPermalink }}" Width="{{ .Width }}" height="{{ .Height }}" {{ with $alt }}alt="{{.}}"{{ else }}alt=""{{ end }}/>
+    {{ else with $LightImage }}<img src="{{ .RelPermalink }}" Width="{{ .Width }}" height="{{ .Height }}" {{ with $alt }}alt="{{.}}"{{ else }}alt=""{{ end }}/>
+    {{ else with $DarkImage }}<img src="{{ .RelPermalink }}" Width="{{ .Width }}" height="{{ .Height }}" {{ with $alt }}alt="{{.}}"{{ else }}alt=""{{ end }}/>
+    {{ end }}
+</picture>
+{{ end }}

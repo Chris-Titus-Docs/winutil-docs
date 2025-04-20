@@ -3,7 +3,7 @@ title: Store
 weight: 2
 ---
 
-{{< tabs items="Installation & Updates,Upgrade All,Uninstall,Get Installed,Clear Selection" defaultIndex="1" >}}
+{{< tabs items="Installation & Updates,Upgrade All,Uninstall,Get Installed,Clear Selection" defaultIndex="0" >}}
 
   {{< tab >}}
     * Choose the programs you want to install or upgrade.
@@ -33,9 +33,7 @@ weight: 2
   {{< /tab >}}
 {{< /tabs >}}
 
-![Install Image](/images/Install-Tab-Dark.png#only-dark#gh-dark-mode-only)
-![Install Image](/images/Install-Tab-Light.png#only-light#gh-light-mode-only)
-
+{{< image src="images/Install-Tab" alt="Install Image" >}}
 
 > [!TIP]
 > If you have trouble finding an application, press `ctrl + f` and search the name of it. Applications will filter depending on your input.
