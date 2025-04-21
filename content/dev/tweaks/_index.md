@@ -30,7 +30,7 @@ weight: 1
 ### Shortcuts
 
 - [Create Winutil Shortcut](shortcuts/shortcut/)
-### z--Advanced-Tweaks---CAUTION
+### Advanced-Tweaks---CAUTION
 
 - [Adobe Debloat](z--advanced-tweaks---caution/debloatadobe/)
 - [Adobe Network Block](z--advanced-tweaks---caution/blockadobenet/)
