@@ -22,17 +22,17 @@
 
 {{/*Applying Image Processing*/}}
 {{ with $SingleImage }}
-    {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
+    {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
         {{ $SingleImage = . }}
     {{ end }}
 {{ end }}
 {{ with $DarkImage }}
-    {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
+    {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
         {{ $DarkImage = . }}
     {{ end }}
 {{ end }}
 {{ with $LightImage }}
-    {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
+    {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
         {{ $LightImage = . }}
     {{ end }}
 {{ end }}
