@@ -3,7 +3,7 @@
 
 ## Tweaks
 
-### Essential-Tweaks
+### Essential Tweaks
 
 - [Change Windows Terminal default: PowerShell 5 -> PowerShell 7](tweaks/essential-tweaks/powershell7/)
 - [Create Restore Point](tweaks/essential-tweaks/restorepoint/)
@@ -27,7 +27,7 @@
 ### Shortcuts
 
 - [Create Winutil Shortcut](tweaks/shortcuts/shortcut/)
-### Advanced-Tweaks---CAUTION
+### Advanced Tweaks (CAUTION)
 
 - [Adobe Debloat](tweaks/z--advanced-tweaks---caution/debloatadobe/)
 - [Adobe Network Block](tweaks/z--advanced-tweaks---caution/blockadobenet/)
@@ -47,7 +47,7 @@
 - [Set Classic Right-Click Menu ](tweaks/z--advanced-tweaks---caution/rightclickmenu/)
 - [Set Display for Performance](tweaks/z--advanced-tweaks---caution/display/)
 - [Set Time to UTC (Dual Boot)](tweaks/z--advanced-tweaks---caution/utc/)
-### Customize-Preferences
+### Customize Preferences
 
 - [Bing Search in Start Menu](tweaks/customize-preferences/bingsearch/)
 - [Center Taskbar Items](tweaks/customize-preferences/taskbaralignment/)
@@ -65,7 +65,7 @@
 - [Task View Button in Taskbar](tweaks/customize-preferences/taskview/)
 - [Verbose Messages During Logon](tweaks/customize-preferences/verboselogon/)
 - [Widgets Button in Taskbar](tweaks/customize-preferences/taskbarwidgets/)
-### Performance-Plans
+### Performance Plans
 
 - [Add and Activate Ultimate Performance Profile](tweaks/performance-plans/addultperf/)
 - [Remove Ultimate Performance Profile](tweaks/performance-plans/removeultperf/)
@@ -80,7 +80,7 @@
 - [Set Up Autologin](features/fixes/autologin/)
 - [System Corruption Scan](features/fixes/dism/)
 - [WinGet Reinstall](features/fixes/winget/)
-### Legacy-Windows-Panels
+### Legacy Windows Panels
 
 - [Control Panel](features/legacy-windows-panels/control/)
 - [Network Connections](features/legacy-windows-panels/network/)
