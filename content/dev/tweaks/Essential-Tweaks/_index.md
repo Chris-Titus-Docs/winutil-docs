@@ -6,7 +6,7 @@ weight: 1
 
 ## Tweaks
 
-### Essential-Tweaks
+### Essential Tweaks
 
 - [Change Windows Terminal default: PowerShell 5 -> PowerShell 7](powershell7/)
 - [Create Restore Point](restorepoint/)

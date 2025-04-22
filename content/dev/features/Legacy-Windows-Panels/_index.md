@@ -4,7 +4,7 @@ weight: 3
 
 ## Features
 
-### Legacy-Windows-Panels
+### Legacy Windows Panels
 
 - [Control Panel](control/)
 - [Network Connections](network/)

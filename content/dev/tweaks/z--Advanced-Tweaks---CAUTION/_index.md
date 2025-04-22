@@ -6,7 +6,7 @@ weight: 2
 
 ## Tweaks
 
-### Advanced-Tweaks---CAUTION
+### Advanced Tweaks (CAUTION)
 
 - [Adobe Debloat](debloatadobe/)
 - [Adobe Network Block](blockadobenet/)

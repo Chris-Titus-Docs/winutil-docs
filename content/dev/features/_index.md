@@ -14,7 +14,7 @@ weight: 2
 - [Set Up Autologin](fixes/autologin/)
 - [System Corruption Scan](fixes/dism/)
 - [WinGet Reinstall](fixes/winget/)
-### Legacy-Windows-Panels
+### Legacy Windows Panels
 
 - [Control Panel](legacy-windows-panels/control/)
 - [Network Connections](legacy-windows-panels/network/)

@@ -6,7 +6,7 @@ weight: 3
 
 ## Tweaks
 
-### Customize-Preferences
+### Customize Preferences
 
 - [Bing Search in Start Menu](bingsearch/)
 - [Center Taskbar Items](taskbaralignment/)

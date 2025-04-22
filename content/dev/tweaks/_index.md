@@ -6,7 +6,7 @@ weight: 1
 
 ## Tweaks
 
-### Essential-Tweaks
+### Essential Tweaks
 
 - [Change Windows Terminal default: PowerShell 5 -> PowerShell 7](essential-tweaks/powershell7/)
 - [Create Restore Point](essential-tweaks/restorepoint/)
@@ -30,7 +30,7 @@ weight: 1
 ### Shortcuts
 
 - [Create Winutil Shortcut](shortcuts/shortcut/)
-### Advanced-Tweaks---CAUTION
+### Advanced Tweaks (CAUTION)
 
 - [Adobe Debloat](z--advanced-tweaks---caution/debloatadobe/)
 - [Adobe Network Block](z--advanced-tweaks---caution/blockadobenet/)
@@ -50,7 +50,7 @@ weight: 1
 - [Set Classic Right-Click Menu ](z--advanced-tweaks---caution/rightclickmenu/)
 - [Set Display for Performance](z--advanced-tweaks---caution/display/)
 - [Set Time to UTC (Dual Boot)](z--advanced-tweaks---caution/utc/)
-### Customize-Preferences
+### Customize Preferences
 
 - [Bing Search in Start Menu](customize-preferences/bingsearch/)
 - [Center Taskbar Items](customize-preferences/taskbaralignment/)
@@ -68,7 +68,7 @@ weight: 1
 - [Task View Button in Taskbar](customize-preferences/taskview/)
 - [Verbose Messages During Logon](customize-preferences/verboselogon/)
 - [Widgets Button in Taskbar](customize-preferences/taskbarwidgets/)
-### Performance-Plans
+### Performance Plans
 
 - [Add and Activate Ultimate Performance Profile](performance-plans/addultperf/)
 - [Remove Ultimate Performance Profile](performance-plans/removeultperf/)
