@@ -26,7 +26,7 @@ Advanced Tweaks are intended for experienced users who have a solid understandin
 
 [O&O ShutUp10++](https://www.oo-software.com/en/shutup10) can be launched from Winutil with only one button click. It is a free privacy tool for Windows that lets users easily manage their privacy settings. It disables telemetry, controls updates, and manages app permissions to enhance security and privacy. The tool offers recommended settings for optimal privacy with just a few clicks.
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/3HvNr8eMcv0" title="O&O ShutUp10++: For Windows 10 & 11, with Dark Mode" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{< youtube id=3HvNr8eMcv0 loading=lazy >}}
 
 
 ### DNS
