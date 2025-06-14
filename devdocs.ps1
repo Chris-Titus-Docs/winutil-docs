@@ -234,6 +234,7 @@ function GenerateMarkdown {
     return $markdown
 }
 
+Remove-Item -Path "content/dev" -Recurse -Force -ErrorAction SilentlyContinue
 Set-Location -Path (Get-WinUtilContent)
 
 # Main execution starts here
