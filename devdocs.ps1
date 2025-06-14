@@ -337,6 +337,7 @@ if (Test-Path -Path $tweaksPath) {
 # Generate main index file
 GenerateMainIndex -outputPath $outputPath -featureCategories $featureCategories -tweakCategories $tweakCategories
 
+# Go back and clean up
 Set-Location -Path $PSScriptRoot
 Remove-Item -Path "winutil-main" -Recurse -Force -ErrorAction SilentlyContinue
 
