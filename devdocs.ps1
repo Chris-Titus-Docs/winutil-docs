@@ -37,7 +37,7 @@ function GenerateCategoryIndex {
     )
 
     $indexFilePath = Join-Path -Path $categoryPath -ChildPath "_index.md"
-    $content = "---`ntitle: `"$categoryName`"`n---`n`n"
+    $content = "---`ntitle: `"$categoryName`"`nweight: 0`n---`n`n"
     $content += "## Contents`n`n"
 
     foreach ($item in $items) {
@@ -60,7 +60,7 @@ function GenerateSectionIndex {
     )
 
     $indexFilePath = Join-Path -Path $sectionPath -ChildPath "_index.md"
-    $content = "---`ntitle: `"$sectionTitle`"`n---`n`n"
+    $content = "---`ntitle: `"$sectionTitle`"`nweight: 0`n---`n`n"
     $content += "## Categories`n`n"
 
     foreach ($category in $categories.Keys | Sort-Object) {
@@ -91,7 +91,7 @@ function GenerateMainIndex {
     )
 
     $indexFilePath = Join-Path -Path $outputPath -ChildPath "_index.md"
-    $content = "---`ntitle: `"WinUtil Documentation`"`n---`n`n"
+    $content = "---`ntitle: `"WinUtil Documentation`"`nweight: 0`n---`n`n"
     
     # Add Features section
     $content += "## Features`n`n"
