@@ -7,7 +7,7 @@
 param(
     [string]$featuresPath = "winutil-main/config/feature.json",
     [string]$tweaksPath = "winutil-main/config/tweaks.json",
-    [string]$outputPath = (Join-Path -Path $PSScriptRoot -ChildPath "dev")
+    [string]$outputPath = (Join-Path -Path $PSScriptRoot -ChildPath "content/dev")
 )
 
 function Get-WinUtilContent {
