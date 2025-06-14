@@ -139,11 +139,14 @@ function GenerateMarkdown {
         [PSCustomObject]$item,
         
         [Parameter(Mandatory=$true)]
-        [string]$type
+        [string]$type,
+        
+        [Parameter(Mandatory=$true)]
+        [int]$weight
     )
 
     # Create Hugo front matter
-    $markdown = "---`ntitle: `"$($item.Content)`"`n---`n`n"
+    $markdown = "---`ntitle: `"$($item.Content)`"`nweight: $weight`n---`n`n"
     
     # Add warning for advanced tweaks
     if ($type -eq "tweak" -and $item.category -eq "z__Advanced Tweaks - CAUTION") {
@@ -276,11 +279,16 @@ if (Test-Path -Path $featuresPath) {
         $categoryPath = Join-Path -Path $featuresOutputPath -ChildPath $category
         EnsureDirectory -path $categoryPath
         
-        foreach ($item in $featureCategories[$category]) {
+        # Sort items alphabetically by name and assign weights
+        $sortedItems = $featureCategories[$category] | Sort-Object { $_.Name }
+        $weight = 1
+        
+        foreach ($item in $sortedItems) {
             $mdFilePath = Join-Path -Path $categoryPath -ChildPath "$($item.Name).md"
-            $markdown = GenerateMarkdown -name $item.Name -item $item.Feature -type "feature"
+            $markdown = GenerateMarkdown -name $item.Name -item $item.Feature -type "feature" -weight $weight
             $markdown | Out-File -FilePath $mdFilePath -Encoding utf8
             Write-Host "Created $mdFilePath"
+            $weight++
         }
         
         # Generate index file for this category
@@ -317,11 +325,16 @@ if (Test-Path -Path $tweaksPath) {
         $categoryPath = Join-Path -Path $tweaksOutputPath -ChildPath $category
         EnsureDirectory -path $categoryPath
         
-        foreach ($item in $tweakCategories[$category]) {
+        # Sort items alphabetically by name and assign weights
+        $sortedItems = $tweakCategories[$category] | Sort-Object { $_.Name }
+        $weight = 1
+        
+        foreach ($item in $sortedItems) {
             $mdFilePath = Join-Path -Path $categoryPath -ChildPath "$($item.Name).md"
-            $markdown = GenerateMarkdown -name $item.Name -item $item.Tweak -type "tweak"
+            $markdown = GenerateMarkdown -name $item.Name -item $item.Tweak -type "tweak" -weight $weight
             $markdown | Out-File -FilePath $mdFilePath -Encoding utf8
             Write-Host "Created $mdFilePath"
+            $weight++
         }
         
         # Generate index file for this category
