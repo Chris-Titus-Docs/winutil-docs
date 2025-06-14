@@ -7,7 +7,7 @@
 param(
     [string]$featuresPath = "winutil-main/config/feature.json",
     [string]$tweaksPath = "winutil-main/config/tweaks.json",
-    [string]$outputPath = "dev"
+    [string]$outputPath = (Join-Path -Path $PSScriptRoot -ChildPath "dev")
 )
 
 function Get-WinUtilContent {
@@ -15,7 +15,7 @@ function Get-WinUtilContent {
     $tempPath = "winutil-main"
     Invoke-WebRequest -Uri "https://github.com/ChrisTitusTech/winutil/archive/refs/heads/main.zip" -OutFile $zipPath
     Expand-Archive -Path $zipPath -DestinationPath $tempPath
-    Remove-Directory -Path $zipPath -Force
+    Remove-Item -Path $zipPath -Force
     return $tempPath
 }
 
@@ -336,5 +336,8 @@ if (Test-Path -Path $tweaksPath) {
 
 # Generate main index file
 GenerateMainIndex -outputPath $outputPath -featureCategories $featureCategories -tweakCategories $tweakCategories
+
+Set-Location -Path $PSScriptRoot
+Remove-Item -Path "winutil-main" -Recurse -Force -ErrorAction SilentlyContinue
 
 Write-Host "Documentation generation complete. Files saved to $outputPath"
