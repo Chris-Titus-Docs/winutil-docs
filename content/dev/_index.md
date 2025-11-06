@@ -31,6 +31,7 @@
 
 - [Adobe Debloat](tweaks/z--advanced-tweaks---caution/debloatadobe/)
 - [Adobe Network Block](tweaks/z--advanced-tweaks---caution/blockadobenet/)
+- [Block Razer Software Installs](tweaks/z--Advanced-Tweaks---CAUTION/razerblock/)
 - [Disable Background Apps](tweaks/z--advanced-tweaks---caution/disablebgapps/)
 - [Disable Fullscreen Optimizations](tweaks/z--advanced-tweaks---caution/disablefso/)
 - [Disable Intel MM (vPro LMS)](tweaks/z--advanced-tweaks---caution/disablelms1/)

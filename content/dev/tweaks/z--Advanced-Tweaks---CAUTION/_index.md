@@ -10,6 +10,7 @@ weight: 2
 
 - [Adobe Debloat](debloatadobe/)
 - [Adobe Network Block](blockadobenet/)
+- [Block Razer Software Installs](razerblock/)
 - [Disable Background Apps](disablebgapps/)
 - [Disable Fullscreen Optimizations](disablefso/)
 - [Disable Intel MM (vPro LMS)](disablelms1/)
